@@ -1,5 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 113px;
+  width: 100%;
+  div.name_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-family: "Volkhov", serif;
+    }
+  }
+
+  nav {
+    position: relative;
+    ul.desktop_navigation {
+      display: none;
+      gap: 32px;
+    }
+    ul.mobile_navigation {
+      display: none;
+      position: absolute;
+      right: -30px;
+      background-color: rgba(253, 244, 244, 0.822);
+      padding: 10px;
+    }
+    img.burger_img:hover ~ ul.mobile_navigation {
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: #222222;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  button.sign_up {
+    display: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #002699;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0px 8px 16px 0px #fa74363d;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  header {
+    nav {
+      img.burger_img {
+        display: none;
+      }
+      ul.desktop_navigation {
+        display: flex;
+      }
+    }
+    button.sign_up {
+      display: block;
+    }
+  }
 }
