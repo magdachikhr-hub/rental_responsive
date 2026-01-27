@@ -97,6 +97,33 @@ section.first {
   }
 }
 
+/* section second */
+section.second {
+  height: 279px;
+  width: 100%;
+  background-color: #b2bbde;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: "Volkhov", serif;
+    color: #222222;
+    font-size: 48px;
+    font-weight: 700;
+    width: 395px;
+  }
+  p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 32px;
+    font-weight: 400;
+    width: 365px;
+  }
+}
+
 @media screen and (min-width: 1150px) {
   header {
     nav {
@@ -131,6 +158,17 @@ section.first {
         width: 502px;
         height: 502px;
       }
+    }
+  }
+
+  section.second {
+    height: 352px;
+    h2 {
+      width: 521px;
+    }
+    p {
+      width: 482px;
+      margin-top: 43px;
     }
   }
 }
