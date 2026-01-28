@@ -101,31 +101,42 @@ section.first {
 section.second {
   height: 279px;
   width: 100%;
-  background-color: #b2bbde;
-  text-align: center;
+  background-color: rgba(0, 38, 153, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
 
-  h2 {
+  h3 {
     font-family: "Volkhov", serif;
     color: #222222;
     font-size: 48px;
     font-weight: 700;
-    width: 395px;
+    width: 100%;
+    text-align: center;
   }
   p {
     font-size: 18px;
-    color: #666666;
+    color: rgba(102, 102, 102, 1);
     line-height: 32px;
     font-weight: 400;
-    width: 365px;
+    width: 360px;
+    text-align: center;
   }
 }
 
-section.third {
+/* section third */
+
+.third {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section.four {
   div.container {
     display: flex;
     flex-direction: column;
@@ -193,7 +204,7 @@ section.third {
       }
     }
   }
-}
+} */
 
 section.fifth {
   width: 400px;
@@ -245,17 +256,25 @@ section.fifth {
     }
   }
 
+  .main {
+    margin: clamp(30px, 5vw, 40px);
+  }
+
   section.second {
-    height: 352px;
-    h2 {
-      width: 521px;
-    }
+    gap: 43px;
     p {
       width: 482px;
-      margin-top: 43px;
+    }
+  }
+  .third {
+    gap: 43px;
+
+    p {
+      width: 482px;
     }
   }
 
+  /* 
   section.third {
     div.container {
       div.best_trip {
@@ -272,5 +291,5 @@ section.fifth {
         flex-direction: row;
       }
     }
-  }
+  } */
 }
