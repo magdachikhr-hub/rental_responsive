@@ -107,6 +107,7 @@ section.second {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 18px;
 
   h2 {
     font-family: "Volkhov", serif;
@@ -121,6 +122,89 @@ section.second {
     line-height: 32px;
     font-weight: 400;
     width: 365px;
+  }
+}
+
+section.third {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 108px;
+
+    div.best_trip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 37.7px;
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: "Volkhov", serif;
+        color: #222222;
+        width: 331px;
+      }
+      p {
+        width: 400px;
+        font-size: 18px;
+        color: #666666;
+        line-height: 32px;
+        margin-bottom: 36px;
+      }
+    }
+
+    div.cars {
+      display: flex;
+      flex-direction: column;
+      gap: 36.12px;
+      border-radius: 16px;
+      img {
+        width: 369px;
+        height: 286px;
+      }
+      div.white,
+      .black,
+      .orange {
+        width: 370px;
+        height: 390px;
+        border: 2px solid #66666614;
+        border-radius: 16px;
+        p.place {
+          color: #222222;
+          font-size: 24px;
+          padding-right: 74px;
+        }
+
+        img.white_car {
+          border-radius: 16px;
+        }
+        div.price {
+          display: flex;
+          align-items: center;
+          padding: 24px;
+        }
+        span {
+          font-size: 24px;
+          color: #002699;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+section.fifth {
+  width: 400px;
+  height: 412px;
+  background-color: #002699;
+  border-radius: 16px;
+  h3 {
+    font-family: "Volkhov", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
   }
 }
 
@@ -169,6 +253,24 @@ section.second {
     p {
       width: 482px;
       margin-top: 43px;
+    }
+  }
+
+  section.third {
+    div.container {
+      div.best_trip {
+        gap: 26px;
+        h2 {
+          width: 438px;
+        }
+        p {
+          width: 521px;
+        }
+      }
+      div.cars {
+        display: flex;
+        flex-direction: row;
+      }
     }
   }
 }
